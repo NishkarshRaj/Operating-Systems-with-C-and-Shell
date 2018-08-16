@@ -20,6 +20,6 @@ then
 	echo $(($num1*$num2))
 elif [ $ch == '4' ]
 then
-	echo $(($num1/$num2))
+	bc <<< "scale = 10 ; ($num1/$num2)"
 fi
-echo "Kakiri Bashi"
+echo "Thanks for watching code"
