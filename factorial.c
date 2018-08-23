@@ -10,6 +10,6 @@ while (a>0)
 p = p*a;
 a = a - 1;
 }
-printf("Factorial is: %d",p);
+return (p);
 printf("\n");
 }
