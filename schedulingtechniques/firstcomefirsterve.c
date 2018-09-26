@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-int n,i,temp,j,t,sw=0,st=0;
+int n,i,temp,j,t=0,sw=0,st=0;
 float tput,wt,tt;
 //t is the total time for completingt all the processes
 printf("Enter the number of processes: ");
@@ -12,9 +12,9 @@ for(i=0;i<n;i++)
 printf("Enter the details for process number %d\n",i+1);
 printf("Process number: ");
 scanf("%d",&pnum[i]);
-printf("Burst number: ");
+printf("Burst time: ");
 scanf("%d",&burst[i]);
-printf("Arrival number: ");
+printf("Arrival time: ");
 scanf("%d",&arrival[i]);
 }
 printf("Sorting on the basis of arrival time for first come first serve\n");
@@ -43,7 +43,7 @@ for(i=0;i<n;i++)
 printf("%d			 %d		 	%d\n",pnum[i],arrival[i],burst[i]);
 }
 //first process will be done always
-printf("%d process is performed\n",pnum[0]);
+printf("%d process is performed now\n",pnum[0]);
 t=arrival[0];
 t=t+burst[0];
 wait[0]=0;
