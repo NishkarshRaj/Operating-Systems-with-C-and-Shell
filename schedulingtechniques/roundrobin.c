@@ -27,6 +27,7 @@ turn[i]=turn[i]+burst[i];
 t=t+burst[i];
 }
 printf("Total compilation will take %d time\n",t);
+//////////
 /////////////////////////////////////////
 while(flag1!=1)
 {
@@ -34,13 +35,14 @@ while(flag1!=1)
 	{
 	if((burst[i]>q)&&(flag[i]==0))
 		{
-		if(wait[i]==0)
+		 if(wait[i]==0)
 		{
 		wait[i]=t1;
 		}
 		else
 		{
-		wait[i]=wait[i]+(t1-last[i]);
+	k= t1-last[i];
+		wait[i]=wait[i]+k;
 		}
 		printf("Process %d is running!!\n",i+1);
 		t1=t1+q;
@@ -50,15 +52,16 @@ while(flag1!=1)
 	else if ((burst[i]<=q)&&(flag[i]==0))
 		{
 	if(wait[i]==0)
-	wait[i]=t1;
+	wait[i]=t1-last[i];
 	else
 	{
-	wait[i]=wait[i]+(t1-last[i]);
+	k=t1-last[i];
+	wait[i]=wait[i]+k;
 	}
 		printf("Process %d is running!!\n",i+1);
 		t1=t1+burst[i];
-		flag[i]=1;
 		last[i]=t1;
+		flag[i]=1;
 		}
 	}
 	count=0;
