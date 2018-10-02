@@ -61,12 +61,25 @@ void findavgTime( int processes[], int n, int bt[])
 int main()
 {
     //process id's
-    int processes[] = { 1, 2, 3};
-    int n = sizeof processes / sizeof processes[0];
+	int n,i;
+cout<<"Enter the number of processes: ";
+cin>>n;
+int processes[n],burst[n];
+   for(i=0;i<n;i++)
+{
+cout<<"Enter the process details for "<<i+1<<" process: ";
+cin>>processes[i];
+}
+    
  
     //Burst time of all processes
-    int  burst_time[] = {10, 5, 8};
+   for(i=0;i<n;i++)
+{
+cout<<"Enter the burst details for "<<i+1<<" process: ";
+cin>>burst[i];
+}
  
-    findavgTime(processes, n,  burst_time);
+    findavgTime(processes, n,  burst);
+cout<<endl;
     return 0;
 }
