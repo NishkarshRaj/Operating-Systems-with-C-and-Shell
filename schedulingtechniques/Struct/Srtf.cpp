@@ -133,5 +133,6 @@ int main()
     int n = sizeof(proc) / sizeof(proc[0]);
  
     findavgTime(proc, n);
+    cout<<endl;
     return 0;
 }

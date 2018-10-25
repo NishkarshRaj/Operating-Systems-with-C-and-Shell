@@ -84,7 +84,7 @@ for(i=0;i<n;i++)
 sw=sw+wait[i];
 st=st+turn[i];
 }
-tput=(float)(n/t);
+tput=(float)n/t;
 wt=(float)(sw/n);
 tt=(float)(st/n);
 printf("Process number		Burst time		Wait time		Turaround time\n");
@@ -92,7 +92,7 @@ for(i=0;i<n;i++)
 {
 printf("%d		 	%d 			%d 			%d\n",pnum[i],b[i],wait[i],turn[i]);
 }
-printf("Turnaround time : %f\n",tput);
+printf("Throughput : %f\n",tput);
 printf("Average waiting time: %f\n",wt);
 printf("Average turnaround time: %f\n",tt);
 return 0;

@@ -40,7 +40,7 @@ for(i=0;i<n;i++)
 sw=sw+wait[i];
 st=st+turn[i];
 }
-tput=(float)(n/t);
+tput=(float)n/t;
 wt=(float)(sw/n);
 tt=(float)(st/n);
 printf("Process number		Burst time		Wait time		Turaround time\n");

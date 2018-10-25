@@ -69,7 +69,7 @@ t=t+burst[i];
 }
 printf("\n\n");
 printf("All tasks are now performed\n");
-tput=(float)(n/t);
+tput=(float)n/t;
 for(i=0;i<n;i++)
 {
 sw=(float)(sw+wait[i]);

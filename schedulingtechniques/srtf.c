@@ -73,13 +73,13 @@ i=0;
 while(count)
 {
 printf("Number of processes in RAM at %d time are %d\n",cmptime,count);
-if(((cmptime+burst[i])<arrival[i+1])&&((i+1)<n))
+if(((cmptime+burst[i])<arr[i+1])&&((i+1)<n))
 {
 cmptime=cmptime+burst[i];
 printf("%d process is completed\n",i+1);
 count--;
 }
-else if(((cmptime+burst[i])>arrival[i+1])&&((i+1)<n))
+else if(((cmptime+burst[i])>arr[i+1])&&((i+1)<n))
 {
 ////sorting the processes
 }
