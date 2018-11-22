@@ -7,7 +7,7 @@ printf("Enter the number of processes: ");
 scanf("%d",&n);
 printf("Enter the time quantum: ");
 scanf("%d",&q);
-int pnum[n],burst[n],wait[n],turn[n],flag[n],count,b[n],last[i];;
+int pnum[n],burst[n],wait[n],turn[n],flag[n],count,b[n],last[n];
 for(i=0;i<n;i++)
 {
 printf("Enter the details for process number %d\n",i+1);

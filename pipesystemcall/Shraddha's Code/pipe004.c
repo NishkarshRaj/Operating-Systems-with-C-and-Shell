@@ -5,8 +5,8 @@ int main() {
    int pipefds1[2], pipefds2[2];
    int rs1, rs2;
    int pid;
-   char pipe1writemessage[20] = "wish";
-   char pipe2writemessage[20] = "shraddha";
+   char pipe1writemessage[20] = "Nishkarsh";
+   char pipe2writemessage[20] = "Khare";
    char readmessage[20];
    rs1 = pipe(pipefds1);
    
